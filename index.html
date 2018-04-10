@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="App" >
+<head>
+  <meta charset="utf-8">
+  <title>Name MY Cat</title>
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="NameCtrl">
+  <header>
+    <h1>Name My Cat</h1>
+  </header>
+  <main>
+    <div class="img-container p-top p-bottom">
+      <img ng-src="{{catPhoto}}"/>
+    </div>
+
+    <div class="name-container p-top p-bottom">
+      <span class="name">{{firstName}} {{lastName}}</span>
+    </div>
+
+    <button type="button" class="btn btn-outline-primary" ng-click="getName(names)">Gimme Another</button>
+  </main>
+  <footer>
+    <div class="credits">
+      A project by <a href="https://twitter.com/girldevilpit/">@girldevilpit</a>
+    </div>
+  </footer>
+
+</body>
+</html>
